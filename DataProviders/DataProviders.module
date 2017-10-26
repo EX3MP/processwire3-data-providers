@@ -56,15 +56,11 @@ class DataProviders extends WireData implements Module
 	 */
 	public function init()
     {
-		// register autoloader
-		require_once($this->wire('config')->paths->DataProviders . 'src/ffe/Psr4Autoloader.php');
-		$loader = new Psr4Autoloader();
-		$loader->register();
-		$loader->addNamespace(
+		$this->classLoader->addNamespace(
 			'ffe\ProcessWire3\DataProviders',
 			$this->wire('config')->paths->DataProviders . 'src/ffe/DataProviders'
 		);
-        $loader->addNamespace(
+        $this->classLoader->addNamespace(
             trim($this->baseNs, '\\ '),
             $this->wire('config')->paths->root . trim($this->basePath, '/ ')
         );
