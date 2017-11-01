@@ -3,20 +3,17 @@
  * Class definition of DataProviders
  *
  * @author Marco Stoll <marco@fast-forward-encoding.de>
- * @version 1.0.0
+ * @author Pascal Franzke (ex3mp) <pf@linienflug.design>
+ * @version 1.0.1
  * @copyright 2016, Marco Stoll, https://github.com/marcostoll
  * @filesource
  * @todo support chunk rendering
  */
 
-namespace ffe\ProcessWire3;
+namespace ProcessWire;
 
 use ffe\ProcessWire3\DataProviders\DataProvidersFactory;
 use ffe\ProcessWire3\DataProviders\Psr4Autoloader;
-use ProcessWire\HookEvent;
-use ProcessWire\Module;
-use ProcessWire\Page;
-use ProcessWire\WireData;
 
 /**
  * Class DataProviders
@@ -38,9 +35,11 @@ class DataProviders extends WireData implements Module
 			'title' => 'Data Providers',
 			'version' => 101,
 			'summary' => 'Define data providers for templates or chunks to prepare data or process actions',
+            'href' => 'https://github.com/marcostoll/processwire3-data-providers',
+
             'requires' => 'ProcessWire>=3.0.25',
             'autoload' => 'template!=admin',
-            'href' => 'https://github.com/marcostoll/processwire3-data-providers'
+            'singular' => true,
 		];
 	}
 
