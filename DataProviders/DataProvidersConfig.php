@@ -9,9 +9,7 @@
  * @filesource
  */
 
-namespace ffe\ProcessWire3;
-
-use ProcessWire\ModuleConfig;
+namespace ProcessWire;
 
 /**
  * Class DataProvidersConfig
