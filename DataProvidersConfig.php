@@ -38,7 +38,7 @@ class DataProvidersConfig extends ModuleConfig
                 'name' => 'basePath',
                 'label' => 'Data Providers Base Path',
                 'type' => 'text',
-                'value' => 'site/dataproviders',
+                'value' => 'site/templates/DataProvider',
                 'placeholder' => 'base directory storing the data provider class files',
                 'description' => 'Insert the base directory name for storing the data provider class files '
                     . '(relative to $config->paths->root).',

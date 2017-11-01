@@ -38,7 +38,7 @@ class DataProviders extends WireData implements Module
             'href' => 'https://github.com/marcostoll/processwire3-data-providers',
 
             'requires' => 'ProcessWire>=3.0.25',
-            'autoload' => 'template!=admin',
+            'autoload' => 'template!=admin|language|permission|role|user|users',
             'singular' => true,
 		];
 	}
